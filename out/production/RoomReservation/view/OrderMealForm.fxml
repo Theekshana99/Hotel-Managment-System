@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MealContext" prefHeight="609.0" prefWidth="1180.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderMealFormController">
+   <children>
+      <Label layoutX="374.0" layoutY="6.0" prefHeight="36.0" prefWidth="380.0" text="Meals Details And Order Meals" textFill="#f80505" underline="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="53.0" prefHeight="17.0" prefWidth="132.0" text="Local Meals" textFill="#0bb911" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="367.0" layoutY="66.0" orientation="VERTICAL" prefHeight="537.0" prefWidth="3.0" />
+      <Separator layoutX="774.0" layoutY="66.0" orientation="VERTICAL" prefHeight="537.0" prefWidth="6.0" />
+      <Label layoutX="498.0" layoutY="53.0" prefHeight="17.0" prefWidth="132.0" text="Chinese Meals" textFill="#0bb911" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="908.0" layoutY="53.0" prefHeight="17.0" prefWidth="132.0" text="French Meals" textFill="#0bb911" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField labelFloat="true" layoutX="21.0" layoutY="101.0" prefHeight="25.0" prefWidth="308.0" promptText="Guest ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="798.0" layoutY="101.0" prefHeight="25.0" prefWidth="308.0" promptText="Guest ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="393.0" layoutY="101.0" prefHeight="25.0" prefWidth="308.0" promptText="Guest ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <TableView layoutX="4.0" layoutY="158.0" prefHeight="376.0" prefWidth="357.0">
+        <columns>
+          <TableColumn prefWidth="53.0" text="Meal ID" />
+          <TableColumn prefWidth="79.0" text="Meal Name" />
+            <TableColumn prefWidth="69.0" text="Meal Price" />
+            <TableColumn prefWidth="86.0" text="Count of Meal" />
+            <TableColumn prefWidth="69.0" text="Order" />
+        </columns>
+      </TableView>
+      <TableView layoutX="374.0" layoutY="158.0" prefHeight="376.0" prefWidth="396.0">
+        <columns>
+          <TableColumn prefWidth="67.0" text="Meal ID" />
+          <TableColumn prefWidth="72.0" text="Meal Name" />
+            <TableColumn prefWidth="75.0" text="Meal Price" />
+            <TableColumn prefWidth="86.0" text="Count of Meal" />
+            <TableColumn prefWidth="92.0" text="Order" />
+        </columns>
+      </TableView>
+      <TableView layoutX="780.0" layoutY="158.0" prefHeight="376.0" prefWidth="396.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Meal ID" />
+          <TableColumn prefWidth="75.0" text="Meal Name" />
+            <TableColumn prefWidth="75.0" text="Meal Price" />
+            <TableColumn prefWidth="87.0" text="Count Of Meal" />
+            <TableColumn prefWidth="82.0" text="Order" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="277.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="198.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1094.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="690.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="598.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1000.0" layoutY="549.0" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: #27ae60;" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

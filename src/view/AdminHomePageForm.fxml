@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminHomeContext" prefHeight="630.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomePageFormController">
+   <children>
+      <ImageView fitHeight="671.0" fitWidth="1180.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/image1.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="54.0" prefWidth="1180.0" style="-fx-background-color: blue;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="119.0" layoutY="15.0" onAction="#GoRoomOnAction" prefHeight="25.0" prefWidth="66.0" text="Rooms" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="185.0" layoutY="15.0" onAction="#GoMealOnAction" prefHeight="25.0" prefWidth="135.0" text="Meal Package" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="320.0" layoutY="15.0" onAction="#GoIncomeOnAction" prefHeight="25.0" prefWidth="149.0" text="Income Reports" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="15.0" onAction="#BackOnAction" prefHeight="25.0" prefWidth="66.0" text="Back" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="69.0" prefHeight="200.0" prefWidth="126.0">
+         <children>
+            <AnchorPane fx:id="Contextone" prefHeight="598.0" prefWidth="1173.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

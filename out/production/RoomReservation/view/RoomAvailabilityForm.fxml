@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RoomAvailabilityContext" prefHeight="609.0" prefWidth="1181.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomAvailabilityFormController">
+   <children>
+      <Label layoutX="518.0" layoutY="7.0" prefHeight="30.0" prefWidth="195.0" text="Room Availability" textFill="#d70d0d" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboRooms" labelFloat="true" layoutX="244.0" layoutY="68.0" prefHeight="25.0" prefWidth="157.0" promptText="Select Room ID" />
+      <JFXTextField labelFloat="true" layoutX="45.0" layoutY="68.0" prefHeight="25.0" prefWidth="157.0" promptText="Guset  ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <TableView layoutX="5.0" layoutY="114.0" prefHeight="440.0" prefWidth="649.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Room ID" />
+          <TableColumn prefWidth="235.0" text="Room Type(Single/Double/Triple/Quad)" />
+            <TableColumn prefWidth="78.0" text="Price" />
+            <TableColumn prefWidth="74.0" text="Booking" />
+            <TableColumn prefWidth="62.0" text="Available" />
+            <TableColumn prefWidth="124.0" text="AC/Non-AC" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="29.0" prefHeight="17.0" prefWidth="157.0" text="Booking Room" textFill="#1d9707" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="832.0" layoutY="29.0" prefHeight="17.0" prefWidth="157.0" text="Available Rooms" textFill="#1d9707" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="832.0" layoutY="321.0" prefHeight="17.0" prefWidth="157.0" text="Booking Rooms" textFill="#1d9707" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TableView layoutX="672.0" layoutY="68.0" prefHeight="245.0" prefWidth="495.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Room ID" />
+          <TableColumn prefWidth="238.0" text="Room Type(Single/Double/Triple/Quad)" />
+            <TableColumn prefWidth="181.0" text="AC Or Non-AC" />
+        </columns>
+      </TableView>
+      <TableView layoutX="672.0" layoutY="354.0" prefHeight="245.0" prefWidth="495.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Room ID" />
+          <TableColumn prefWidth="243.0" text="Room Type(Single/Double/Triple/Quad)" />
+            <TableColumn prefWidth="75.0" text="AC/Non-AC" />
+            <TableColumn prefWidth="100.0" text="Booking Details" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="514.0" layoutY="562.0" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Save" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="389.0" layoutY="562.0" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Edit" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

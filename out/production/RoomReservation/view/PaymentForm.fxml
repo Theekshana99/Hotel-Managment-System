@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaymentContext" prefHeight="609.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <AnchorPane layoutX="392.0" layoutY="115.0" prefHeight="310.0" prefWidth="429.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="108.0" layoutY="14.0" text="Payment Details" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <TextField layoutX="188.0" layoutY="107.0" prefHeight="25.0" prefWidth="192.0" promptText="Room Bill">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Label layoutX="54.0" layoutY="105.0" text="Room Bill  :" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="147.0" text="Meal Bill   :" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="188.0" layoutY="149.0" prefHeight="25.0" prefWidth="192.0" promptText="Meal Bill">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <JFXTextField focusColor="#f8f8f8" labelFloat="true" layoutX="188.0" layoutY="58.0" prefHeight="37.0" prefWidth="192.0" promptText="Guest ID" unFocusColor="#fdffff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXTextField>
+            <Label layoutX="56.0" layoutY="187.0" text="Total Bill  :" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="188.0" layoutY="190.0" prefHeight="25.0" prefWidth="192.0" promptText="Total Bill">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Label layoutX="56.0" layoutY="65.0" text="Guest ID  :" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="304.0" layoutY="236.0" style="-fx-background-color: #e74c3c;" text="Pay Bill" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="185.0" layoutY="236.0" style="-fx-background-color: #27ae60;" text="Print Bill" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

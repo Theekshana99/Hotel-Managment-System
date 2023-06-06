@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminContext" prefHeight="630.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginFormController">
+   <children>
+      <ImageView fitHeight="671.0" fitWidth="1180.0" layoutX="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/image1.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="443.0" layoutY="226.0" prefHeight="254.0" prefWidth="293.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="44.0" layoutY="14.0" text="Admin Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="54.0" text="Enter Pin" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField layoutX="72.0" layoutY="97.0" prefHeight="30.0" prefWidth="149.0" />
+            <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="138.0" onAction="#LogAdminPageOnAction" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #27ae60;" text="Login" textFill="#fcfcfc">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="73.0" layoutY="192.0" prefHeight="31.0" prefWidth="149.0" text="Forgot Your Pin" textFill="#f5f5f5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="138.0" onAction="#BackToDashBoardOnAction" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #27ae60;" text="Back" textFill="#fcfcfc">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
